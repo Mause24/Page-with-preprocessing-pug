@@ -1,0 +1,20 @@
+extend components/plantilla.pug
+block contenidos
+        section.intro
+            .intro__imagen: img(src="images/imagen.png")
+            .intro__contenido 
+                h2 #{titulos[0]} 
+                p
+                    |Lorem ipsum dolor sit amet,consectetur adipisicing elit.
+                    |Rem reiciendis sit corporis accusantium explicabo vero
+                    |voluptatibus perferendis porro eos, fugiat, voluptatem doloribus ipsa
+                    |hic? Commodi officiis eligendi vitae? Accusamus, dolorem.
+                    span Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, consequuntur?
+                    
+                a.boton leer mas
+        main.contenido
+            each titulo in titulos
+                if titulo != "Titulo Principal"
+                    +caja("imagen.png",titulo,"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, suscipit?")
+            
+                    

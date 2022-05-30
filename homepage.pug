@@ -1,0 +1,15 @@
+extend components/plantilla.pug
+block contenidos
+    section.homepage
+        include components/menu.pug
+        main.container 
+            h2 #{titulos[0]}
+            while n < 2
+                p(key=n++)
+                    |Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    | Autem atque enim, maiores est consectetur excepturi doloribus
+                    | debitis, neque provident, alias animi veritatis ut aperiam!
+                    | Nulla, iste. Qui rerum fuga nesciunt.
+            a.boton ver mas
+            
+        
